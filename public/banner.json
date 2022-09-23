@@ -1,0 +1,32 @@
+[
+    {
+        "_id": "1",
+        "first-title": "Medical services that",
+        "second-title": "you can trust", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/bg-1.jpg"
+    },
+    {
+        "_id": "2",
+        "first-title": "The Hospital of the ",
+        "second-title": "Future, Today", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/bg-2-1-1.jpg"
+    },
+    {
+        "_id": "3",
+        "first-title": "Medical excellence",
+        "second-title": "every day.", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/bg-4.jpg"
+    },
+    {
+        "_id": "4",
+        "first-title": "Exceptional people.",
+        "second-title": "Exceptional care.", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/bg-3-1.jpg"
+    },
+    {
+        "_id": "5",
+        "first-title": "Healthcare just for kids.",
+        "second-title": "Saving children.", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/bg-5-1.jpg"
+    }
+]

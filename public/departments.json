@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "01", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/5.jpg",
+        "name": "Outpatient Surgery",
+        "system":"In Surgery"
+    },
+    {
+        "_id": "02", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/12.jpg",
+        "name": "Cardiac Clinic",
+        "system":"In Services, Therapy"
+    },
+    {
+        "_id": "03", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/10.jpg",
+        "name": "Ophthalology Clinic",
+        "system":"in Therapy"
+    },
+    {
+        "_id": "04", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/8-1.jpg",
+        "name": "Gynaecological Clinic",
+        "system":"In Therapy"
+    },
+    {
+        "_id": "05", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/9.jpg",
+        "name": "Outplatient Rehabilitation",
+        "system":"In Rehabilitation"
+    },
+    {
+        "_id": "06", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/11.jpg",
+        "name": "Larynogological Clinic",
+        "system":"In Therapy"
+    },
+    {
+        "_id": "07", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/6.jpg",
+        "name": "Pedicatric Clinic",
+        "system":"in Pediatric"
+    },
+    {
+        "_id": "08", 
+        "img": "https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/7.jpg",
+        "name": "labratory Analysis",
+        "system":"in Pharmcy"
+    }
+]

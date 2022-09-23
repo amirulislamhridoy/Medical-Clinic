@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../Header/Header';
+import { useLocation } from 'react-router-dom';
+import Header from '../../Shared/Header';
 import './Banner.css'
 
 const Banner = () => {

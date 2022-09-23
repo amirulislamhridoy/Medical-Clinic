@@ -28,7 +28,7 @@ const Banner = () => {
     const a = 'https://medical-clinic.cmsmasters.net/wp-content/uploads/2016/09/bg-1.jpg'
 
     return (
-        <section style={{backgroundImage: `url(${a})`}}>
+        <section className='banner' style={{backgroundImage: `url(${a})`}}>
             <div>
                 <Header></Header>
             </div>

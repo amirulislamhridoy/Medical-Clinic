@@ -1,10 +1,10 @@
-section{
+.banner{
     /* background-image: url('../../../photos/bg-1.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
-section > div{
+.banner > div{
     max-width: 1200px;
     margin: 0 auto;
-    height: 90vh;
+    height: 80vh;
 }

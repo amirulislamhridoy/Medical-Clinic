@@ -1,0 +1,26 @@
+.service-about{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.service-about > div{
+    padding: 20px 40px;
+    color: white;
+}
+.service-about > div > h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.service-about > div > button{
+    padding: 14px 20px;
+    background-color: transparent;
+    border-color: white;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.service-about > div > button:hover{
+    background-color: white;
+    color: #3eb8d7;
+    transition-duration: .3s;
+}

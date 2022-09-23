@@ -1,0 +1,14 @@
+.partners{
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.partners h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.partners div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

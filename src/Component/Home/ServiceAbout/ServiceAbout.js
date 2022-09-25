@@ -18,7 +18,7 @@ const ServiceAbout = () => {
     ]
     return (
         <section className='service-about'>
-            {data.map(d => <SingleServiceAbout d={d}></SingleServiceAbout>)}
+            {data.map(d => <SingleServiceAbout d={d} key={d._id}></SingleServiceAbout>)}
         </section>
     );
 };

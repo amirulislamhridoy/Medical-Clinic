@@ -9,15 +9,16 @@ const Departments = () => {
     const location = useLocation()
     const [departments, setDepartments] = useState([])
     useEffect(() => {
-        fetch('departments.json')
+        fetch('https://medical-clinic-server.herokuapp.com/department')
         .then(res => res.json())
         .then(data => setDepartments(data))
     }, [])
+
     return (
         <main>
             <Header location={location}></Header>
             <div className='department-main'>
-                {departments.map(department => <SingleDepartment department={department}></SingleDepartment>)}
+                {departments.map(department => <SingleDepartment department={department} key={department._id}></SingleDepartment>)}
             </div>
             <Footer></Footer>
         </main>

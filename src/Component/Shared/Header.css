@@ -1,3 +1,24 @@
+header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.header-change-bg{
+    background-color: #4575bd;
+    transition-delay: all .01s ease;
+}
+.header-change-bg > div > nav:first-child{
+    display: none;
+}
+.header-change-bg > div > nav:last-child{
+    padding: 0;
+}
+
+header > div{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 nav, ul{
     display: flex;
     justify-content: space-between;
@@ -20,11 +41,10 @@ li{
 li:first-child{
     margin-left: 0;
 }
-a{
+header a{
     color: white;
     text-decoration: none;
 }
-
 .change-header-bg{
     background-color: #336bb8;
 }

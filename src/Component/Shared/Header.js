@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../photos/logo.png'
 import './Header.css'
@@ -7,7 +7,7 @@ const Header = ({ location }) => {
     const [scrollY, setScrollY] = useState(false)
 
     function scrollFn(){
-        if(window.scrollY >= 200){
+        if(window.scrollY >= 100){
             setScrollY(true)
         }else{
             setScrollY(false)

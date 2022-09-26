@@ -2,9 +2,51 @@
     /* background-image: url('../../../photos/bg-1.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 .banner > div{
     max-width: 1200px;
     margin: 0 auto;
     height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner > div {
+    color: white;
+}
+.banner p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.banner h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 400;
+}
+.header-first-div button{
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    padding: 15px 20px;
+    border: 1px solid white;
+    margin-top: 40px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.header-slider-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header-slider-btn button{
+    margin: 0 3px ;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.header-slider-btn button:hover{
+   color: black;
 }

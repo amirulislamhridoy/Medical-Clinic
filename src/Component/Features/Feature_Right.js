@@ -13,7 +13,6 @@ const Feature_Right = () => {
 
     useEffect(() => {
         dispatch(updateDate(date))
-        console.log(date)
     }, [date])
     return (
         <DayPicker

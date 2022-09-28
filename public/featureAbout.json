@@ -1,0 +1,20 @@
+[
+    {
+        "_id": "1",
+        "title": "The Best Doctors",
+        "text": "Lorem ipsum dolor sit amet nsectetur cing elit. Suspe ndisse suscipit sagittis leo sit met entum estibulum dignissim",
+        "fontAwesome": "fa-regular fa-user"
+    },
+    {
+        "_id": "2",
+        "title": "Care About All Clients",
+        "text": "Lorem ipsum dolor sit amet nsectetur cing elit. Suspe ndisse suscipit sagittis leo sit met entum estibulum dignissim",
+        "fontAwesome": "fa-regular fa-heart"
+    },
+    {
+        "_id": "3",
+        "title": "Communication With Patients",
+        "text": "Lorem ipsum dolor sit amet nsectetur cing elit. Suspe ndisse suscipit sagittis leo sit met entum estibulum dignissim",
+        "fontAwesome": "fa-regular fa-comments"
+    }
+]

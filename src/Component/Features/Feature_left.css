@@ -24,6 +24,9 @@
     color: white;
     transition-duration: all ease .5s;
 }
+.feature-left select option{
+    background-color: #0392ce;
+}
 .feature-left input:focus, .feature-left select:focus{
     outline-color: white;
 }

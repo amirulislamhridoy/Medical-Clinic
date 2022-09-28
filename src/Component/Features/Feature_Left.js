@@ -1,11 +1,18 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import './Feature_left.css'
 
 const Feature_Left = () => {
+    const date = useSelector(state => state.date.date)
+    
+    const submitFrom = event => {
+        event.preventDefault()
+        console.log(date)
+    }
     return (
         <div className='feature-left'>
             <h2>Book an Appointment</h2>
-            <form>
+            <form onSubmit={submitFrom}>
                 <div className='form-div'>
                     <select name='department'>
                         <option>Select Department</option>
@@ -24,5 +31,3 @@ const Feature_Left = () => {
 };
 
 export default Feature_Left;
-
-// hello

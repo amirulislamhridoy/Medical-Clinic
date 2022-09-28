@@ -4,15 +4,17 @@ import { updateDate } from '../../Redux/dateSlice';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 import './Feature_Right.css'
+import { format } from 'date-fns';
 
 const Feature_Right = () => {
-    const selectDate = useSelector(state => state.date.date)
     const dispatch = useDispatch()
-    const [selected, setSelected] = useState(selectDate)
+    const [selected, setSelected] = useState(new Date())
+    const date = format(selected, 'PP')
 
     useEffect(() => {
-        dispatch(updateDate(selectDate))
-    }, [selected])
+        dispatch(updateDate(date))
+        console.log(date)
+    }, [date])
     return (
         <DayPicker
             className='day-picker'

@@ -7,15 +7,15 @@ const Feature_Left = () => {
             <h2>Book an Appointment</h2>
             <form>
                 <div className='form-div'>
-                    <select>
+                    <select name='department'>
                         <option>Select Department</option>
                     </select>
-                    <input type='text' placeholder='Your Name'></input>
-                    <input type='mail' placeholder='Your Email'></input>
-                    <select>
+                    <input name='name' type='text' placeholder='Your Name'></input>
+                    <input name='mail' type='mail' placeholder='Your Email'></input>
+                    <select name='doctor'>
                         <option>Select Doctor</option>
                     </select>
-                    <input type='number' placeholder='Phone'></input>
+                    <input name='phone' type='number' placeholder='Phone'></input>
                 </div>
                 <input type='submit' value='Make an Appointment'></input>
             </form>

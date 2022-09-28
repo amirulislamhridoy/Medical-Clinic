@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
+    margin-top: 150px;
 }
 .department-main h3, .department-main p{
     margin: 5px 0;

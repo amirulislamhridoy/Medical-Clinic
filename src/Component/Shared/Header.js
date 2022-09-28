@@ -16,7 +16,7 @@ const Header = ({ location }) => {
     window.addEventListener('scroll', scrollFn)
 
     return (
-        <header className={`${location?.pathname === '/departments' && 'change-header-bg'} ${scrollY && 'header-change-bg'}`}>
+        <header className={`${location?.pathname?.length > 1 && 'change-header-bg'} ${scrollY && 'header-change-bg'}`}>
             <div>
                 <nav className='small-nav'>
                     <ul>
@@ -38,8 +38,7 @@ const Header = ({ location }) => {
                     <ul>
                         <li><Link to='/' alt=''>Home</Link></li>
                         <li><Link to='/departments' alt=''>Department</Link></li>
-                        <li><Link to='' alt=''>Timetable</Link></li>
-                        <li><Link to='' alt=''>Features</Link></li>
+                        <li><Link to='/features' alt=''>Features</Link></li>
                     </ul>
                 </nav>
             </div>

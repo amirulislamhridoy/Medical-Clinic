@@ -3,6 +3,7 @@ header{
     width: 100%;
     left: 0;
     top: 0;
+    z-index: 2;
 }
 .header-change-bg{
     background-color: #4575bd;
@@ -17,6 +18,7 @@ header{
 
 header > div{
     max-width: 1200px;
+    padding: 0 5px;
     margin: 0 auto;
 }
 nav, ul{

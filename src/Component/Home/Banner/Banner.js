@@ -60,12 +60,12 @@ const Banner = () => {
                     <a href='/departments'><button>View Departments</button></a>
                 </div>
                 <div className='header-slider-btn'>
-                    <button><i class="fa-solid fa-chevron-right"></i></button>
-                    <button onClick={() => setDataCount(data[0])}><i class="fa-solid fa-o"></i></button>
-                    <button onClick={() => setDataCount(data[1])}><i class="fa-solid fa-o"></i></button>
-                    <button onClick={() => setDataCount(data[2])}><i class="fa-solid fa-o"></i></button>
-                    <button onClick={() => setDataCount(data[3])}><i class="fa-solid fa-o"></i></button>
-                    <button><i class="fa-solid fa-exclamation"></i><i class="fa-solid fa-exclamation"></i></button>
+                    <button><i className="fa-solid fa-chevron-right"></i></button>
+                    <button onClick={() => setDataCount(data[0])}><i className="fa-solid fa-o"></i></button>
+                    <button onClick={() => setDataCount(data[1])}><i className="fa-solid fa-o"></i></button>
+                    <button onClick={() => setDataCount(data[2])}><i className="fa-solid fa-o"></i></button>
+                    <button onClick={() => setDataCount(data[3])}><i className="fa-solid fa-o"></i></button>
+                    <button><i className="fa-solid fa-exclamation"></i><i className="fa-solid fa-exclamation"></i></button>
                 </div>
             </div>
         </section>

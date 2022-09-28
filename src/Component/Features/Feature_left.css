@@ -1,0 +1,37 @@
+.feature-left{
+    background-color: #3065b5;
+    padding: 15px 30px;
+    border-radius: 8px;
+    color: white;
+    margin-top: 10px;
+}
+.feature-left h2{
+    font-weight: 500;
+}
+.feature-left form div{
+    display: flex;
+    flex-direction: column;
+}
+.feature-left input, .feature-left select{
+    width: 277px;
+    font-size: 16px;
+    padding: 7px 12px;
+    box-sizing: border-box;
+    border-color: rgba(255,255,255,.5);    
+    outline: white;
+    margin: 3px 0;
+    background-color: rgba(255,255,255,.2);
+    color: white;
+    transition-duration: all ease .5s;
+}
+.feature-left input:focus, .feature-left select:focus{
+    outline-color: white;
+}
+.feature-left input::placeholder{
+    color: white;
+}
+.feature-left input[type='submit']:hover{
+    background-color: white;
+    cursor: pointer;
+    color: #3065b5;
+}

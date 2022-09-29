@@ -24,3 +24,9 @@
     color: #3eb8d7;
     transition-duration: .3s;
 }
+
+@media screen and (max-width: 600px){
+    .service-about{
+        flex-direction: column;
+    }
+}

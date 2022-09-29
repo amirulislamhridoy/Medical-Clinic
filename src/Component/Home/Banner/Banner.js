@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../../Shared/Header';
 import './Banner.css'
 import bg1 from '../../../photos/bg-1.jpg'
 import bg2 from '../../../photos/bg-2-1-1.jpg'
@@ -51,7 +50,6 @@ const Banner = () => {
     return (
         <section className='banner' style={{ backgroundImage: `url(${dataCount?.img})` }}>
             <div>
-                <Header></Header>
                 <div className='header-first-div'>
                     <p>Entrust your health our doctors.</p>
                     <h1>{dataCount.firstTitle}</h1>

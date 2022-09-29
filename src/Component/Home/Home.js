@@ -1,5 +1,7 @@
 import React from 'react';
+import './Home.css'
 import Footer from '../Shared/Footer';
+import Header from '../Shared/Header';
 import Banner from './Banner/Banner';
 import ClientSay from './ClientSay/ClientSay';
 import Contact from './Contract/Contact';
@@ -9,7 +11,8 @@ import ServiceAbout from './ServiceAbout/ServiceAbout';
 
 const Home = () => {
     return (
-        <main>
+        <main className='home'>
+            <Header></Header>
             <Banner></Banner>
             <Contact></Contact>
             <ServiceAbout></ServiceAbout>

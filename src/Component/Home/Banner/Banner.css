@@ -1,5 +1,4 @@
 .banner{
-    /* background-image: url('../../../photos/bg-1.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -7,7 +6,7 @@
 .banner > div{
     max-width: 1200px;
     margin: 0 auto;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -49,4 +48,28 @@
 }
 .header-slider-btn button:hover{
    color: black;
+}
+
+
+@media screen and (max-width: 600px) {
+    .header-first-div p {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .banner > div p{
+        margin-top: 35%;
+    }
+    .banner h1{
+        font-size: 20px;
+        margin: 0;
+    }
+    .header-first-div button{
+        padding: 3px 8px;
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .header-slider-btn button{
+        font-size: 12px;
+        margin: 0 1px;
+    }
 }

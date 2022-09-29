@@ -18,7 +18,7 @@ const Departments = () => {
         <main>
             <Header location={location}></Header>
             <div className='department-main'>
-                {departments.map(department => <SingleDepartment department={department} key={department._id}></SingleDepartment>)}
+                {departments?.map(department => <SingleDepartment department={department} key={department._id}></SingleDepartment>)}
             </div>
             <Footer></Footer>
         </main>

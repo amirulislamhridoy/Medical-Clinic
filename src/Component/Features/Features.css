@@ -1,5 +1,4 @@
 .features-section{
-    margin-top: 140px;
     padding: 10px 5px;
     min-height: 75vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.145), rgba(0, 0, 0, 0.196)), url('../../photos/1-1\ \(1\).jpg');
@@ -41,4 +40,15 @@
 }
 .features-about h4{
     font-weight: 500;
+}
+
+@media screen and (max-width: 768px){
+    .features-section{
+        display: flex;
+    }
+    .features-about{
+        flex-wrap: wrap;
+        padding: 0 5px;
+        gap: 0;
+    }
 }

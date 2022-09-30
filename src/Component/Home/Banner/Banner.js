@@ -54,7 +54,7 @@ const Banner = () => {
                     <p>Entrust your health our doctors.</p>
                     <h1>{dataCount.firstTitle}</h1>
                     <h1>{dataCount.secondTitle}</h1>
-                    <a href=''><button>Make an Appointment</button></a>
+                    <a href='/features'><button>Make an Appointment</button></a>
                     <a href='/departments'><button>View Departments</button></a>
                 </div>
                 <div className='header-slider-btn'>

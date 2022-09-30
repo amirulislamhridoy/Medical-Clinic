@@ -6,6 +6,7 @@ import './Login.css'
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import Loading from '../Shared/Loading';
+import useToken from '../../hook/useToken';
 
 const Login = () => {
     const location = useLocation()
@@ -23,24 +24,27 @@ const Login = () => {
         rLoading,
         rError,
     ] = useCreateUserWithEmailAndPassword(auth);
+    
     const loginFormSubmit = (e) => {
         e.preventDefault()
-        const mail = e.target.mail.value
+        const email = e.target.email.value
         const pass = e.target.password.value
-        signInWithEmailAndPassword(mail, pass)
+        signInWithEmailAndPassword(email, pass)
     }
     const registerFormSubmit = (e) => {
         e.preventDefault()
-        const mail = e.target.mail.value
+        const email = e.target.email.value
         const pass = e.target.password.value
-        createUserWithEmailAndPassword(mail, pass)
+        createUserWithEmailAndPassword(email, pass)
     }
-
+    
+    const [token] = useToken(user || sUser || rUser)
     useEffect(() => {
         if (sUser || rUser || user) {
             navigate('/')
         }
-    }, [sUser, rUser, user])
+    }, [sUser, rUser, user, token])
+    
     if(sLoading || loading || rLoading){
         return <Loading></Loading>
     }
@@ -50,13 +54,13 @@ const Login = () => {
             <div className='login-div'>
                 <form onSubmit={loginFormSubmit}>
                     <h2>Login</h2>
-                    <input name='mail' type='email' placeholder='example@gmail.com'></input>
+                    <input name='email' type='email' placeholder='example@gmail.com'></input>
                     <input name='password' type='password' placeholder='******'></input>
                     <input type='submit' value='Login'></input>
                 </form>
                 <form onSubmit={registerFormSubmit}>
                     <h2>Register</h2>
-                    <input name='mail' type='email' placeholder='example@gmail.com'></input>
+                    <input name='email' type='email' placeholder='example@gmail.com'></input>
                     <input name='password' type='password' placeholder='******'></input>
                     <input type='submit' value='Register'></input>
                 </form>

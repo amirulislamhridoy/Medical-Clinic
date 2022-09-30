@@ -1,0 +1,11 @@
+.make-admin{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.make-admin button{
+    background-color: #336bb8;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}

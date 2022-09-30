@@ -15,7 +15,7 @@ const Appointment = () => {
                     <option></option>
                 </select>
                 <input type='text' placeholder='Your Name'></input>
-                <input type='mail' placeholder='Your Email'></input>
+                <input type='email' placeholder='Your Email'></input>
                 <select placeholder='Select Doctors'>
                     <option></option>
                 </select>

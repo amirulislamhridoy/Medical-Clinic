@@ -45,20 +45,20 @@ const AllAppointments = () => {
                 setLoading(false)
             })
     }
-    if(loading){
+    if (loading) {
         return <Loading></Loading>
     }
     return (
         <div className='all-appointments'>
             <Header location={location}></Header>
             <h2>All Today Appointments</h2>
-            <table border='1' cellSpacing='1'>
+            {todayAllResult.length > 1 ? <table border='1' cellSpacing='1'>
                 <thead>
                     <tr>
                         <th>Date</th>
                         <th>Department</th>
                         <th>Doctor</th>
-                        <th>Mail</th>
+                        <th>Email</th>
                         <th>Name</th>
                         <th>Phone</th>
                         <th></th>
@@ -69,24 +69,29 @@ const AllAppointments = () => {
                         <td>{appointment.date}</td>
                         <td>{appointment.department}</td>
                         <td>{appointment.doctor}</td>
-                        <td>{appointment.mail}</td>
+                        <td>{appointment.email}</td>
                         <td>{appointment.name}</td>
                         <td>{appointment.phone}</td>
                         <td onClick={() => deleteFn(appointment._id)}>Delete</td>
                     </tr>)}
-                    {todayAllResult.length < 1 && <tr>
-                        <td colSpan='7' style={{textAlign: 'center'}}>Today you have no appointment</td>
-                    </tr>}
                 </tbody>
             </table>
+                :
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colSpan='7' style={{ textAlign: 'center' }}>Today you have no appointment</td>
+                        </tr>
+                    </tbody>
+                </table>}
             <h2>All Appointments</h2>
-            <table border='1' cellSpacing='1'>
+            {appointments.length > 1 ? <table border='1' cellSpacing='1'>
                 <thead>
                     <tr>
                         <th>Date</th>
                         <th>Department</th>
                         <th>Doctor</th>
-                        <th>Mail</th>
+                        <th>Email</th>
                         <th>Name</th>
                         <th>Phone</th>
                         <th></th>
@@ -97,16 +102,21 @@ const AllAppointments = () => {
                         <td>{appointment.date}</td>
                         <td>{appointment.department}</td>
                         <td>{appointment.doctor}</td>
-                        <td>{appointment.mail}</td>
+                        <td>{appointment.email}</td>
                         <td>{appointment.name}</td>
                         <td>{appointment.phone}</td>
                         <td onClick={() => deleteFn(appointment._id)}>Delete</td>
                     </tr>)}
-                    {appointments.length > 1 || <tr>
-                        <td colSpan='7' style={{textAlign: 'center'}}>You have no appointment</td>
-                    </tr>}
                 </tbody>
             </table>
+                :
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colSpan='7' style={{ textAlign: 'center' }}>You have no appointment</td>
+                        </tr>
+                    </tbody>
+                </table>}
         </div>
     );
 };

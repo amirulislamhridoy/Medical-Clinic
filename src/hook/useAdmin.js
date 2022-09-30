@@ -4,10 +4,9 @@ const useAdmin = (user) => {
     const [admin, setAdmin] = useState(false)
     const email = user?.email
     if (email) {
-        fetch('')
+        fetch(`http://localhost:5000/user/${email}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setAdmin(data)
             })
     }

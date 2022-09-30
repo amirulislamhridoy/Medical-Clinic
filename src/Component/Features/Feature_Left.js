@@ -13,11 +13,11 @@ const Feature_Left = () => {
         e.preventDefault()
         const department = e.target.department.value
         const name = e.target.name.value
-        const mail = e.target.mail.value
+        const email = e.target.email.value
         const doctor = e.target.doctor.value
         const phone = e.target.phone.value
         const bookData = {
-            department, name, mail, doctor, phone, date
+            department, name, email, doctor, phone, date
         }
         if (department === 'Select Department' || doctor === 'Select Doctor') {
             return alert('Please fill full form.')
@@ -58,7 +58,7 @@ const Feature_Left = () => {
                         <option value='Iabratory Analysis'>Iabratory Analysis</option>
                     </select>
                     <input name='name' type='text' placeholder='Your Name' required></input>
-                    <input name='mail' type='email' placeholder='Your Email' required></input>
+                    <input name='email' type='email' placeholder='Your Email' required></input>
                     <select name='doctor' required>
                         <option>Select Doctor</option>
                         <option>Omer Doctor</option>

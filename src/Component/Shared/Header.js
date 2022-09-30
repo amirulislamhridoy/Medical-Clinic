@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase_init';
+import useAdmin from '../../hook/useAdmin';
 import logo from '../../photos/logo.png'
 import './Header.css'
 import Loading from './Loading';
@@ -11,6 +12,7 @@ const Header = ({ location }) => {
     const [scrollY, setScrollY] = useState(false)
     const [navIcon, setNavIcon] = useState(false)
     const [user, loading, error] = useAuthState(auth);
+    const [admin] = useAdmin(user)
 
     function scrollFn() {
         if (window.scrollY >= 100) {
@@ -20,7 +22,7 @@ const Header = ({ location }) => {
         }
     }
     window.addEventListener('scroll', scrollFn)
-    if(loading){
+    if (loading) {
         return <Loading></Loading>
     }
 
@@ -48,7 +50,10 @@ const Header = ({ location }) => {
                         <li><Link to='/' alt=''>Home</Link></li>
                         <li><Link to='/departments' alt=''>Department</Link></li>
                         <li><Link to='/features' alt=''>Appointment</Link></li>
-                        <li><Link to='/allAppointment' alt=''>All Appointment</Link></li>
+                        {admin && <>
+                            <li><Link to='/allAppointment' alt=''>All Appointment</Link></li>
+                            <li><Link to='/makeAdmin' alt=''>Make Admin</Link></li>
+                        </>}
                         {user ?
                             <li><Link onClick={() => signOut(auth)} to='/login' alt=''>Log Out</Link></li>
                             :

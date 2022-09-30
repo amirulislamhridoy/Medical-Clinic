@@ -50,6 +50,7 @@ const Header = ({ location }) => {
                         <li><Link to='/' alt=''>Home</Link></li>
                         <li><Link to='/departments' alt=''>Department</Link></li>
                         <li><Link to='/features' alt=''>Appointment</Link></li>
+                        <li><Link to='/doctors' alt=''>Our Doctors</Link></li>
                         {admin && <>
                             <li><Link to='/allAppointment' alt=''>All Appointment</Link></li>
                             <li><Link to='/makeAdmin' alt=''>Make Admin</Link></li>

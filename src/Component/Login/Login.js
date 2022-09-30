@@ -5,6 +5,7 @@ import Header from '../Shared/Header';
 import './Login.css'
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import Loading from '../Shared/Loading';
 
 const Login = () => {
     const location = useLocation()
@@ -40,6 +41,9 @@ const Login = () => {
             navigate('/')
         }
     }, [sUser, rUser, user])
+    if(sLoading || loading || rLoading){
+        return <Loading></Loading>
+    }
     return (
         <section className='login'>
             <Header location={location}></Header>

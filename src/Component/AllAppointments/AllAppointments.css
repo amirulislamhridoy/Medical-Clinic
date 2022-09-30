@@ -1,0 +1,19 @@
+.all-appointments h2{
+    text-align: center;
+}
+.all-appointments table{
+    margin: 10px auto;
+}
+.all-appointments table td{
+    padding: 5px 10px;
+}
+.all-appointments table td:last-child{
+    background-color: rgba(206, 63, 63, 0.779);
+    color: white;
+    cursor: pointer;
+}
+.all-appointments table td:last-child:hover{
+    background-color: rgba(0, 0, 0, 0.561);
+    color: white;
+    cursor: pointer;
+}

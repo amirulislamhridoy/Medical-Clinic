@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios'
 import { useSelector } from 'react-redux';
 import './Feature_left.css'
+import { toast } from 'react-toastify';
 
 const Feature_Left = () => {
     const date = useSelector(state => state.date.date)
@@ -24,18 +25,20 @@ const Feature_Left = () => {
         axios.post('http://localhost:5000/book', bookData)
             .then(function (response) {
                 setSuccess('We will contract with you.');
+                toast.success('You appointment is success. We will contract with you')
                 setError('')
                 e.target.reset()
                 setTimeout(() => {
                     setSuccess('')
-                }, [3500])
+                }, [5000])
             })
             .catch(function (error) {
                 setError(error.code)
                 setSuccess('')
+                toast.error(error.message)
                 setTimeout(() => {
                     setError('')
-                }, [3500])
+                }, [5000])
             });
     }
     return (

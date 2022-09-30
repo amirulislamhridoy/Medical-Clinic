@@ -66,9 +66,6 @@ header a{
         display: flex;
         gap: 5px
     }
-    .logo{
-        width: 180px;
-    }
     header nav:first-child ul{
         display: none;
     }
@@ -94,10 +91,18 @@ header a{
     .fa-solid.fa-bars, .fa-solid.fa-x{
         display: block;
         color: white;
-        font-size: 20px;
+        font-size: 32px;
         cursor: pointer;
     }
     .fa-solid.fa-bars.display-none, .fa-solid.fa-x.display-none{
         display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .logo{
+        width: 180px;
+    }
+    .fa-solid.fa-bars, .fa-solid.fa-x{
+        font-size: 20px;
     }
 }

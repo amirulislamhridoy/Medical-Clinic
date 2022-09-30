@@ -52,16 +52,19 @@
 
 
 @media screen and (max-width: 1024px) {
-    .header-first-div p {
-        font-size: 18px;
-        margin-top: 20px;
-    }
     .banner > div{
         min-height: 100vh;
     }
     .banner > div p{
         margin-top: 35%;
     }
+    .header-first-div button{
+        padding: 8px 14px;
+        font-size: 20px;
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width: 600px){
     .banner h1{
         font-size: 20px;
         margin: 0;

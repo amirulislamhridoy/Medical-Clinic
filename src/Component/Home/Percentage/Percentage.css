@@ -24,8 +24,9 @@
     margin-top: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     .percentage > div{
+        gap: 10px;
         flex-wrap: wrap;
     }
 }

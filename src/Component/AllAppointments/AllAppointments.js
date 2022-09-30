@@ -16,7 +16,7 @@ const AllAppointments = () => {
 
     useEffect(() => {
         setLoading(true)
-        fetch(`http://localhost:5000/allAppointments?today=${today}`)
+        fetch(`https://medical-clinic-server.herokuapp.com/allAppointments?today=${today}`)
             .then(res => res.json())
             .then(data => {
                 setAppointments(data?.allResult)
@@ -31,7 +31,7 @@ const AllAppointments = () => {
 
     const deleteFn = (id) => {
         setLoading(true)
-        fetch(`http://localhost:5000/appointment/${id}`, {
+        fetch(`https://medical-clinic-server.herokuapp.com/appointment/${id}`, {
             method: 'DELETE'
         })
             .then((response) => response.json())

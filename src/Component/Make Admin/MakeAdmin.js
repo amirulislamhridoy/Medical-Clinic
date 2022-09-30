@@ -11,14 +11,14 @@ const MakeAdmin = () => {
     console.log(users)
 
     useState(() => {
-        fetch('http://localhost:5000/user')
+        fetch('https://medical-clinic-server.herokuapp.com/user')
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [refetch])
 
     const makeAdminFn = (id) => {
         console.log(id)
-        fetch(`http://localhost:5000/makeAdmin?id=${id}`, {
+        fetch(`https://medical-clinic-server.herokuapp.com/makeAdmin?id=${id}`, {
             method: 'PUT',
             body: JSON.stringify(),
             headers: {

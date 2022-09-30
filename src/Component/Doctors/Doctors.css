@@ -6,3 +6,6 @@
     margin: 0 auto;
     justify-content: center;
 }
+.doctors > div img{
+    width: 100%;
+}

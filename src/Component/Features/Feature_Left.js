@@ -22,7 +22,7 @@ const Feature_Left = () => {
         if (department === 'Select Department' || doctor === 'Select Doctor') {
             return alert('Please fill full form.')
         }
-        axios.post('http://localhost:5000/book', bookData)
+        axios.post('https://medical-clinic-server.herokuapp.com/book', bookData)
             .then(function (response) {
                 setSuccess('We will contract with you.');
                 toast.success('You appointment is success. We will contract with you')

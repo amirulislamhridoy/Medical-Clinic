@@ -4,3 +4,9 @@
     margin: 0;
     z-index: 1;
 }
+
+@media screen and (max-width: 600px) {
+    .day-picker{
+        padding: 3px
+    }
+}

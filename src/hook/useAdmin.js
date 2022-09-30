@@ -4,7 +4,7 @@ const useAdmin = (user) => {
     const [admin, setAdmin] = useState(false)
     const email = user?.email
     if (email) {
-        fetch(`http://localhost:5000/user/${email}`)
+        fetch(`https://medical-clinic-server.herokuapp.com/user/${email}`)
             .then(res => res.json())
             .then(data => {
                 setAdmin(data)

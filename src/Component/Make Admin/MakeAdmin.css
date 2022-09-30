@@ -3,6 +3,9 @@
     justify-content: center;
     margin-top: 10px;
 }
+.make-admin thead th{
+    min-width: 50px;
+}
 .make-admin button{
     background-color: #336bb8;
     color: white;

@@ -81,7 +81,7 @@ header a{
         background: linear-gradient(#4575bd, #4575bd48);
         width: 100%;
         text-align: center;
-        top: -220px;
+        top: -250px;
         transition-duration: 1s;
     }
     header nav:last-child .ul{
@@ -95,6 +95,7 @@ header a{
         display: block;
         color: white;
         font-size: 20px;
+        cursor: pointer;
     }
     .fa-solid.fa-bars.display-none, .fa-solid.fa-x.display-none{
         display: none;

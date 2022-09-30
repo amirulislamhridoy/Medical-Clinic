@@ -1,11 +1,15 @@
+import { signOut } from 'firebase/auth';
 import React, { useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../firebase_init';
 import logo from '../../photos/logo.png'
 import './Header.css'
 
 const Header = ({ location }) => {
     const [scrollY, setScrollY] = useState(false)
     const [navIcon, setNavIcon] = useState(false)
+    const [user, loading, error] = useAuthState(auth);
 
     function scrollFn() {
         if (window.scrollY >= 100) {
@@ -17,7 +21,7 @@ const Header = ({ location }) => {
     window.addEventListener('scroll', scrollFn)
 
     return (
-        <header style={{backgroundColor: `${navIcon ? '#4575bd': ""}`}} className={`${location?.pathname?.length > 1 && 'change-header-bg'} ${scrollY && 'header-change-bg'}`}>
+        <header style={{ backgroundColor: `${navIcon ? '#4575bd' : ""}` }} className={`${location?.pathname?.length > 1 && 'change-header-bg'} ${scrollY && 'header-change-bg'}`}>
             <div>
                 <nav className='small-nav'>
                     <ul>
@@ -39,8 +43,12 @@ const Header = ({ location }) => {
                     <ul className={`${navIcon && 'ul'}`}>
                         <li><Link to='/' alt=''>Home</Link></li>
                         <li><Link to='/departments' alt=''>Department</Link></li>
-                        <li><Link to='/features' alt=''>Features</Link></li>
-                        <li><Link to='/login' alt=''>Login</Link></li>
+                        <li><Link to='/features' alt=''></Link></li>
+                        {user ?
+                            <li><Link onClick={() => signOut(auth)} to='/login' alt=''>Log Out</Link></li>
+                            :
+                            <li><Link to='/login' alt=''>Login</Link></li>
+                        }
 
                         <div className='mobile-short-nav'>
                             <li><Link to='' alt=''>FAQ</Link></li>

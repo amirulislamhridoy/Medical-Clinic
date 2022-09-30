@@ -8,6 +8,7 @@ import AllAppointments from './Component/AllAppointments/AllAppointments';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MakeAdmin from './Component/Make Admin/MakeAdmin';
+import NotFound from './Component/NotFound/NotFound';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/allAppointment' element={<AllAppointments />} />
         <Route path='/makeAdmin' element={<MakeAdmin />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/*' element={<NotFound />} />
       </Routes>
       <ToastContainer />
     </div>

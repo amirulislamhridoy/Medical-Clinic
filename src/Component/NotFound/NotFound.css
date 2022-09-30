@@ -1,0 +1,7 @@
+.notFound div{
+    display: flex;
+    justify-content: center;
+}
+.notFound img{
+    width: 50vh;
+}

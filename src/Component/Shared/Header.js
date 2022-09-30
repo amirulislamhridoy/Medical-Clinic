@@ -40,6 +40,7 @@ const Header = ({ location }) => {
                         <li><Link to='/' alt=''>Home</Link></li>
                         <li><Link to='/departments' alt=''>Department</Link></li>
                         <li><Link to='/features' alt=''>Features</Link></li>
+                        <li><Link to='/login' alt=''>Login</Link></li>
 
                         <div className='mobile-short-nav'>
                             <li><Link to='' alt=''>FAQ</Link></li>

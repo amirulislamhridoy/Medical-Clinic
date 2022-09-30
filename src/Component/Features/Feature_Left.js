@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios'
 import { useSelector } from 'react-redux';
 import './Feature_left.css'
 
 const Feature_Left = () => {
     const date = useSelector(state => state.date.date)
+    const [success, setSuccess] = useState('')
+    const [error, setError] = useState('')
 
     const submitFrom = e => {
         e.preventDefault()
@@ -11,12 +14,29 @@ const Feature_Left = () => {
         const name = e.target.name.value
         const mail = e.target.mail.value
         const doctor = e.target.doctor.value
-        const time = e.target.time.value
         const phone = e.target.phone.value
-
-        if (department === 'Select Department' || doctor === 'Select Doctor' || time === 'Time') {
-            alert('Please fill full form.')
+        const bookData = {
+            department, name, mail, doctor, phone, date
         }
+        if (department === 'Select Department' || doctor === 'Select Doctor') {
+            return alert('Please fill full form.')
+        }
+        axios.post('http://localhost:5000/book', bookData)
+            .then(function (response) {
+                setSuccess('We will contract with you.');
+                setError('')
+                e.target.reset()
+                setTimeout(() => {
+                    setSuccess('')
+                }, [3500])
+            })
+            .catch(function (error) {
+                setError(error.code)
+                setSuccess('')
+                setTimeout(() => {
+                    setError('')
+                }, [3500])
+            });
     }
     return (
         <div className='feature-left'>
@@ -35,16 +55,16 @@ const Feature_Left = () => {
                         <option value='Iabratory Analysis'>Iabratory Analysis</option>
                     </select>
                     <input name='name' type='text' placeholder='Your Name' required></input>
-                    <input name='mail' type='mail' placeholder='Your Email' required></input>
+                    <input name='mail' type='email' placeholder='Your Email' required></input>
                     <select name='doctor' required>
                         <option>Select Doctor</option>
-                    </select>
-                    <select name='time' required>
-                        <option>Time</option>
+                        <option>Omer Doctor</option>
                     </select>
                     <input name='phone' type='number' placeholder='Phone' required></input>
                 </div>
                 <input type='submit' value='Make an Appointment'></input>
+                {success && <p style={{ color: 'lime' }}>{success}</p>}
+                {error && <p style={{ color: 'red' }}>{error}</p>}
             </form>
         </div>
     );

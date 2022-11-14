@@ -8,6 +8,7 @@ import Contact from './Contract/Contact';
 import Partners from './Partners/Partners';
 import Percentage from './Percentage/Percentage';
 import ServiceAbout from './ServiceAbout/ServiceAbout';
+import OurServices from './OurServices/OurServices';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <ServiceAbout></ServiceAbout>
             <ClientSay></ClientSay>
             <Percentage></Percentage>
+            <OurServices></OurServices>
             <Partners></Partners>
             <Footer></Footer>
         </main>

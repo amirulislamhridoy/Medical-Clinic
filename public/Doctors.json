@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Dr. Michael Linden",
+        "_id":"1",
+        "designation": "Throat Specialist",
+        "img": "https://i.ibb.co/GJL4Vbk/doctor-2.jpg"
+    },
+    {
+        "name": "Dr. Max Turner",
+        "_id":"2",
+        "designation": "Cardiologist",
+        "img": "https://i.ibb.co/NtR9rsQ/doctor-1.jpg"
+    },
+    {
+        "name": "Dr. Amy Adams",
+        "_id":"3",
+        "designation": "Rehabilitation Therapy",
+        "img": "https://i.ibb.co/Mk2gSry/doctor-3.jpg"
+    },
+    {
+        "name": "Dr. Julia jameson",
+        "_id":"4",
+        "designation": "Pediatrist",
+        "img": "https://i.ibb.co/MZk4w2r/doctor-4.jpg"
+    },
+    {
+        "name": "Dr. Nick Sims",
+        "_id":"5",
+        "designation": "Gyneclogist",
+        "img": "https://i.ibb.co/Mkppbnm/doctor-5.jpg"
+    }
+]

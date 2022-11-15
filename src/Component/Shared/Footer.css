@@ -1,6 +1,66 @@
-footer{
-    background-color: black;
-    color: rgb(189, 38, 38);
-    text-align: center;
-    padding: 20px 0;
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px 0;
 }
+footer div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+footer div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+footer div ul h3 {
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+footer div ul a {
+  text-decoration: none;
+  color: gray;
+}
+footer div ul a:hover {
+  color: white;
+}
+footer div ul:first-child li {
+  display: flex;
+  align-items: center;
+}
+footer div ul:first-child i {
+  font-size: 20px;
+  color: gray;
+}
+footer div ul:last-child {
+  margin: 0 10px;
+}
+footer div ul:last-child form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer div ul:last-child form input, footer div ul:last-child form textarea {
+  background-color: transparent;
+  border: 2px solid gray;
+  padding: 10px 8px;
+  min-width: 250px;
+}
+footer div ul:last-child form textarea {
+  height: 70px;
+  margin-top: 20px;
+}
+footer div ul:last-child form input[type=submit] {
+  color: gray;
+  cursor: pointer;
+  margin-top: 20px;
+}
+footer div ul:last-child form input[type=submit]:hover {
+  background-color: gray;
+  color: white;
+  transition-duration: 0.7s;
+}/*# sourceMappingURL=Footer.css.map */

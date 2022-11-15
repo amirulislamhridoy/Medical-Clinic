@@ -2,37 +2,35 @@ import React, { useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase_init';
 import Header from '../Shared/Header';
-import './Login.css'
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithGoogle, useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import Loading from '../Shared/Loading';
 import useToken from '../../hook/useToken';
 
-const Login = () => {
+const Register = () => {
     const location = useLocation()
     const navigate = useNavigate()
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    
     const [
-        signInWithEmailAndPassword,
-        sUser,
-        sLoading,
-        sError,
-    ] = useSignInWithEmailAndPassword(auth);
+        createUserWithEmailAndPassword,
+        rUser,
+        rLoading,
+        rError,
+    ] = useCreateUserWithEmailAndPassword(auth);
 
-    const loginFormSubmit = (e) => {
+    const registerFormSubmit = (e) => {
         e.preventDefault()
         const email = e.target.email.value
         const pass = e.target.password.value
-        signInWithEmailAndPassword(email, pass)
+        createUserWithEmailAndPassword(email, pass)
     }
-    const [token] = useToken(user || sUser )
+    const [token] = useToken(user || rUser)
     useEffect(() => {
-        if (sUser || user) {
+        if ( rUser || user) {
             navigate('/')
         }
-    }, [sUser, user, token])
+    }, [ rUser, user, token])
 
-    if (sLoading || loading ) {
+    if ( loading || rLoading) {
         return <Loading></Loading>
     }
     return (
@@ -41,7 +39,7 @@ const Login = () => {
             <div class="container">
                 <div class="screen">
                     <div class="screen__content">
-                        <form class="login" onSubmit={loginFormSubmit}>
+                        <form class="login" onSubmit={registerFormSubmit}>
                             <div class="login__field">
                                 <i class="login__icon fas fa-user"></i>
                                 <input type="email" name='email' class="login__input" placeholder="User name / Email" required />
@@ -50,11 +48,9 @@ const Login = () => {
                                 <i class="login__icon fas fa-lock"></i>
                                 <input type="password" name='password' class="login__input" placeholder="Password" required />
                             </div>
-                            <Link to='/register'>Create an account</Link>
-                            <br />
-                            <Link to=''>Forgotten Password</Link>
+                            <Link to='/login'>Already have an account.</Link>
                             <button class="button login__submit">
-                                <span class="button__text">Log In Now</span>
+                                <span class="button__text">Register In Now</span>
                                 <i class="button__icon fas fa-chevron-right"></i>
                             </button>
                         </form>
@@ -77,4 +73,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;

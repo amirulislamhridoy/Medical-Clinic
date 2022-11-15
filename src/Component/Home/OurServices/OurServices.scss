@@ -1,0 +1,45 @@
+@import '../../../SASS/variables';
+
+.home-services{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0 35px;
+    .left{
+        background-color: $my-primary;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px 0;
+        padding: 35px;
+        h2{
+            margin-top: 0;
+            font-weight: 400;
+        }
+        a{
+            color: #b5cbed;
+            text-decoration: none;
+            &:hover{
+                color: white;
+            }
+        }
+        button{
+            background-color: transparent;
+            padding: 0;
+            border: 0;
+            color: white;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+    }
+    .right{
+        span{
+            color: $my-accent;
+        }
+        h2{
+            margin-top: 0;
+            font-weight: 500;
+        }
+    }
+}

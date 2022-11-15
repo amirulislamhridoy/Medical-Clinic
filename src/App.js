@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import MakeAdmin from './Component/Make Admin/MakeAdmin';
 import NotFound from './Component/NotFound/NotFound';
 import Doctors from './Component/Doctors/Doctors';
+import Register from './Component/Register/Register';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/allAppointment' element={<AllAppointments />} />
         <Route path='/makeAdmin' element={<MakeAdmin />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
         <Route path='/doctors' element={<Doctors />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>

@@ -1,0 +1,41 @@
+.home-services {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0 35px;
+}
+.home-services .left {
+  background-color: #4575bd;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px 0;
+  padding: 35px;
+}
+.home-services .left h2 {
+  margin-top: 0;
+  font-weight: 400;
+}
+.home-services .left a {
+  color: #b5cbed;
+  text-decoration: none;
+}
+.home-services .left a:hover {
+  color: white;
+}
+.home-services .left button {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.home-services .right span {
+  color: #3eb8d7;
+}
+.home-services .right h2 {
+  margin-top: 0;
+  font-weight: 500;
+}/*# sourceMappingURL=OurServices.css.map */

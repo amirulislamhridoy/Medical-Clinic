@@ -1,6 +1,6 @@
 .home-services {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 70px auto;
   display: flex;
   gap: 0 35px;
 }
@@ -12,6 +12,7 @@
   align-items: flex-start;
   gap: 5px 0;
   padding: 35px;
+  min-width: 200px;
 }
 .home-services .left h2 {
   margin-top: 0;
@@ -32,10 +33,69 @@
   margin-top: 30px;
   cursor: pointer;
 }
+.home-services .right {
+  max-width: 895px;
+  position: relative;
+}
 .home-services .right span {
   color: #3eb8d7;
 }
 .home-services .right h2 {
   margin-top: 0;
   font-weight: 500;
+  margin-bottom: 30px;
+}
+.home-services .right .slider-container {
+  position: static;
+}
+.home-services .right .slider-container .swiper-wrapper .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+}
+.home-services .right .slider-container .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-services .right .slider-container .swiper-wrapper .swiper-slide h3 {
+  font-weight: 500;
+  margin: 15px 0;
+}
+.home-services .right .slider-container .swiper-wrapper .swiper-slide h3 a {
+  font-size: 18px;
+  color: #4575bd;
+  text-decoration: none;
+}
+.home-services .right .slider-container .swiper-wrapper .swiper-slide h3 a:hover {
+  color: gray;
+}
+.home-services .right .slider-container .swiper-wrapper .swiper-slide p {
+  font-size: 14px;
+  color: gray;
+}
+.home-services .right .slider-container .swiper-button-prev::after,
+.home-services .right .slider-container .swiper-button-next::after {
+  font-size: 10px !important;
+  color: gray;
+  border: 1px solid gray;
+  padding: 8px 10px;
+}
+.home-services .right .slider-container .swiper-button-prev,
+.home-services .right .slider-container .swiper-button-next {
+  position: absolute;
+  top: 28px;
+}
+.home-services .right .slider-container .swiper-button-prev:hover::after,
+.home-services .right .slider-container .swiper-button-next:hover::after {
+  background-color: #4575bd;
+  color: white;
+  transition-duration: 0.2s;
+}
+.home-services .right .slider-container .swiper-button-prev {
+  left: calc(100% - 53px);
+}
+.home-services .right .slider-container .swiper-button-next {
+  right: 0;
 }/*# sourceMappingURL=OurServices.css.map */

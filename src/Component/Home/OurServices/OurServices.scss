@@ -18,7 +18,6 @@
             margin-top: 0;
             font-weight: 400;
         }
-
         a {
             color: #b5cbed;
             text-decoration: none;
@@ -27,7 +26,6 @@
                 color: white;
             }
         }
-
         button {
             background-color: transparent;
             padding: 0;
@@ -44,7 +42,6 @@
         span {
             color: $my-accent;
         }
-
         h2 {
             margin-top: 0;
             font-weight: 500;
@@ -106,4 +103,39 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 1300px) {
+    .home-services{
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .home-services{
+        gap: 30px;
+        .right{
+            width: calc(100% - 305px);
+        }
+    }
+}
+@media screen and (max-width: 1038px) {
+    .home-services{
+        .right{
+            margin: 0 auto;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .home-services{
+        gap: 10px;
+        margin: 0 5px;
+        display: block;
+        .left{
+            min-width: 150px;
+        }
+        .right{
+            width: 100%;
+        }
+    }
+    
 }

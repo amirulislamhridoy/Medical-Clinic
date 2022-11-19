@@ -98,4 +98,36 @@
 }
 .home-services .right .slider-container .swiper-button-next {
   right: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .home-services {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home-services {
+    gap: 30px;
+  }
+  .home-services .right {
+    width: calc(100% - 305px);
+  }
+}
+@media screen and (max-width: 1038px) {
+  .home-services .right {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .home-services {
+    gap: 10px;
+    margin: 0 5px;
+    display: block;
+  }
+  .home-services .left {
+    min-width: 150px;
+  }
+  .home-services .right {
+    width: 100%;
+  }
 }/*# sourceMappingURL=OurServices.css.map */

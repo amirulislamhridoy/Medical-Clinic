@@ -14,7 +14,6 @@ import { Pagination, Navigation } from "swiper";
 
 const OurServices = () => {
     const [services, setServices] = useState([])
-    console.log(services)
     let [count, setCount] = useState(3)
 
     useEffect(() => {
@@ -23,17 +22,6 @@ const OurServices = () => {
             .then(data => setServices(data))
     }, [])
 
-    useEffect(() => {
-        // const slider = setInterval(() => {
-        //     ++count
-        //     if (count >= services.length) {
-        //         count = 0
-        //     }
-        //     setDataCount(services[count])
-        //     setCount(count)
-        // }, 3000)
-        // return () => clearInterval(slider)
-    }, [])
     return (
         <section className='home-services'>
             <div className='left'>
@@ -54,7 +42,7 @@ const OurServices = () => {
                 </div>
 
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={1}
                     spaceBetween={30}
                     loop={true}
                     pagination={{
@@ -64,6 +52,24 @@ const OurServices = () => {
                     // modules={[Pagination, Navigation]}
                     modules={[ Navigation]}
                     className="slider-container"
+                    breakpoints={{
+                        550: {
+                          slidesPerView: 2,
+                          spaceBetween: 10,
+                        },
+                        768: {
+                          slidesPerView: 2,
+                          spaceBetween: 10,
+                        },
+                        1200: {
+                          slidesPerView: 2,
+                          spaceBetween: 10,
+                        },
+                        1201: {
+                          slidesPerView: 3,
+                          spaceBetween: 10,
+                        },
+                      }}
                 >
                     {services.map(service => <SwiperSlide key={service._id}>
                         <img src={service.img} alt=''></img>

@@ -9,6 +9,7 @@ import Partners from './Partners/Partners';
 import Percentage from './Percentage/Percentage';
 import ServiceAbout from './ServiceAbout/ServiceAbout';
 import OurServices from './OurServices/OurServices';
+import LatestNews from './LatestNews/LatestNews';
 
 const Home = () => {
     return (
@@ -17,9 +18,10 @@ const Home = () => {
             <Banner></Banner>
             <Contact></Contact>
             <ServiceAbout></ServiceAbout>
+            <OurServices></OurServices>
             <ClientSay></ClientSay>
             <Percentage></Percentage>
-            <OurServices></OurServices>
+            <LatestNews></LatestNews>
             <Partners></Partners>
             <Footer></Footer>
         </main>

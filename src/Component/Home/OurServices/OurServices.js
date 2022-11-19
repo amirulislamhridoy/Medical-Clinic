@@ -14,7 +14,6 @@ import { Pagination, Navigation } from "swiper";
 
 const OurServices = () => {
     const [services, setServices] = useState([])
-    let [count, setCount] = useState(3)
 
     useEffect(() => {
         fetch('departments.json')

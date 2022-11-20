@@ -23,7 +23,7 @@ const Footer = () => {
                 <ul>
                     <h3>Contact Information</h3>
                     <li>
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i className="fa-solid fa-location-dot"></i>
                         <span>
                             227 Marion street
                             <br />
@@ -33,19 +33,19 @@ const Footer = () => {
                         </span>
                     </li>
                     {/* <li>
-                        <i class="fa-solid fa-globe"></i>
+                        <i className="fa-solid fa-globe"></i>
                         <Link to='' className='fa-solid2 fa-globe2'>
                             medical-clinic.cmsmasters.net
                         </Link>
                     </li> */}
                     <li>
-                        <i class="fa-solid fa-envelope"></i>
+                        <i className="fa-solid fa-envelope"></i>
                         <Link to=''>
                             medical-clinic@mail.com
                         </Link>
                     </li>
                     <li>
-                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <i className="fa-solid fa-mobile-screen-button"></i>
                         <span>
                             1-222-333-444-45444
                         </span>

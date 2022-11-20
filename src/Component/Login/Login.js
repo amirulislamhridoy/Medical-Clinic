@@ -38,38 +38,38 @@ const Login = () => {
     return (
         <section>
             <Header location={location}></Header>
-            <div class="container">
-                <div class="screen">
-                    <div class="screen__content">
-                        <form class="login" onSubmit={loginFormSubmit}>
-                            <div class="login__field">
-                                <i class="login__icon fas fa-user"></i>
-                                <input type="email" name='email' class="login__input" placeholder="User name / Email" required />
+            <div className="container">
+                <div className="screen">
+                    <div className="screen__content">
+                        <form className="login" onSubmit={loginFormSubmit}>
+                            <div className="login__field">
+                                <i className="login__icon fas fa-user"></i>
+                                <input type="email" name='email' clasNames="login__input" placeholder="User name / Email" required />
                             </div>
-                            <div class="login__field">
-                                <i class="login__icon fas fa-lock"></i>
-                                <input type="password" name='password' class="login__input" placeholder="Password" required />
+                            <div className="login__field">
+                                <i className="login__icon fas fa-lock"></i>
+                                <input type="password" name='password' className="login__input" placeholder="Password" required />
                             </div>
                             <Link to='/register'>Create an account</Link>
                             <br />
                             <Link to=''>Forgotten Password</Link>
-                            <button class="button login__submit">
-                                <span class="button__text">Log In Now</span>
-                                <i class="button__icon fas fa-chevron-right"></i>
+                            <button className="button login__submit">
+                                <span className="button__text">Log In Now</span>
+                                <i className="button__icon fas fa-chevron-right"></i>
                             </button>
                         </form>
-                        <div class="social-login">
+                        <div className="social-login">
                             <h3>log in via</h3>
-                            <div class="social-icons">
-                                <a onClick={() => signInWithGoogle()} href="#" class="social-login__icon fa-brands fa-google"></a>
+                            <div className="social-icons">
+                                <a onClick={() => signInWithGoogle()} href="#" className="social-login__icon fa-brands fa-google"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="screen__background">
-                        <span class="screen__background__shape screen__background__shape4"></span>
-                        <span class="screen__background__shape screen__background__shape3"></span>
-                        <span class="screen__background__shape screen__background__shape2"></span>
-                        <span class="screen__background__shape screen__background__shape1"></span>
+                    <div className="screen__background">
+                        <span className="screen__background__shape screen__background__shape4"></span>
+                        <span className="screen__background__shape screen__background__shape3"></span>
+                        <span className="screen__background__shape screen__background__shape2"></span>
+                        <span className="screen__background__shape screen__background__shape1"></span>
                     </div>
                 </div>
             </div>

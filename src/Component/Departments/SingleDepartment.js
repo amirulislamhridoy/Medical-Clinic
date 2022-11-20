@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SingleDepartment.css'
 
 const SingleDepartment = (props) => {
@@ -6,8 +7,8 @@ const SingleDepartment = (props) => {
     return (
         <div className='single-department'>
             <img style={{width: '100%'}} src={img} ></img>
-            <h3>{name}</h3>
-            <p>{system}</p>
+            <h3><Link to=''>{name}</Link></h3>
+            <p><Link to=''>{system}</Link></p>
         </div>
     );
 };

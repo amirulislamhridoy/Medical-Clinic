@@ -22,8 +22,8 @@ const HomeDoctors = () => {
                         <p>{doctor.description.slice(0, 58)}...</p>
                     </div>
                     <div>
-                        <p><i class="fa-solid fa-mobile-screen-button"></i> {doctor.mobile}</p>
-                        <p><i class="fa-regular fa-envelope"></i> {doctor.email}</p>
+                        <p><i className="fa-solid fa-mobile-screen-button"></i> {doctor.mobile}</p>
+                        <p><i className="fa-regular fa-envelope"></i> {doctor.email}</p>
                     </div>
                 </div>)}
             </div>

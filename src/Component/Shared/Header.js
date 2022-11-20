@@ -48,7 +48,7 @@ const Header = ({ location }) => {
                     </Link>
                     <ul className={`${navIcon && 'ul'}`}>
                         <li><Link to='/' alt=''>Home</Link></li>
-                        <li><Link to='/departments' alt=''>Department</Link></li>
+                        <li><Link to='/departments' alt=''>Departments</Link></li>
                         <li><Link to='/features' alt=''>Appointment</Link></li>
                         <li><Link to='/doctors' alt=''>Our Doctors</Link></li>
                         {admin && <>

@@ -59,10 +59,10 @@ const Feature_Left = () => {
                     </select>
                     <input name='name' type='text' placeholder='Your Name' required></input>
                     <input name='email' type='email' placeholder='Your Email' required></input>
-                    <select name='doctor' required>
+                    {/* <select name='doctor' required>
                         <option>Select Doctor</option>
                         <option>Omer Doctor</option>
-                    </select>
+                    </select> */}
                     <input name='phone' type='number' placeholder='Phone' required></input>
                 </div>
                 <input type='submit' value='Make an Appointment'></input>

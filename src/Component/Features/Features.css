@@ -1,7 +1,7 @@
 .features-section{
     padding: 10px 5px;
     min-height: 75vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.145), rgba(0, 0, 0, 0.196)), url('../../photos/1-1\ \(1\).jpg');
+    background-image: linear-gradient(rgba(174, 159, 159, 0.145), rgba(141, 131, 131, 0.196)), url('../../photos/1-1\ \(1\).jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

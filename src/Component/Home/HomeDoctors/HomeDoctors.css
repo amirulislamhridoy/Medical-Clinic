@@ -24,7 +24,7 @@
   width: 100%;
 }
 .home-doctors .doctors-container div img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.5s;
 }
 .home-doctors .doctors-container div div:first-child {
@@ -71,4 +71,16 @@
 }
 .home-doctors .doctors-container div div p:last-child {
   margin-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-doctors .doctors-container {
+    grid-template-columns: auto auto;
+    margin: 0 5px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .home-doctors .doctors-container {
+    grid-template-columns: auto;
+  }
 }/*# sourceMappingURL=HomeDoctors.css.map */

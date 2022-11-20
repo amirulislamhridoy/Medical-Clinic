@@ -24,7 +24,7 @@
             img {
                 width: 100%;
                 &:hover{
-                    transform: scale(1.2);
+                    transform: scale(1.1);
                     transition: .5s;
                 }
             }
@@ -77,6 +77,22 @@
                     margin-top: 5px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home-doctors{
+        .doctors-container{
+            grid-template-columns: auto auto;
+            margin: 0 5px;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .home-doctors{
+        .doctors-container{
+            grid-template-columns: auto;
         }
     }
 }

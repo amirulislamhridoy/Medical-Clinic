@@ -5,7 +5,6 @@ import './HomeDoctors.css'
 
 const HomeDoctors = () => {
     const [doctors] = useDoctors()
-    console.log(doctors)
     return (
         <section className='home-doctors'>
             <p>Professionals</p>

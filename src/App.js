@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Component/Home/Home';
 import Departments from './Component/Departments/Departments'
-import Features from './Component/Features/Features';
+import Appointment from './Component/Appointment/Appointment';
 import Login from './Component/Login/Login';
 import AllAppointments from './Component/AllAppointments/AllAppointments';
 import { ToastContainer } from 'react-toastify';
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/departments' element={<Departments>Departments</Departments>} />
-        <Route path='/appointment' element={<Features />} />
+        <Route path='/appointment' element={<Appointment />} />
         <Route path='/allAppointment' element={<AllAppointments />} />
         <Route path='/makeAdmin' element={<MakeAdmin />} />
         <Route path='/login' element={<Login />} />

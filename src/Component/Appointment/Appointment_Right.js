@@ -3,10 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { updateDate } from '../../Redux/dateSlice';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
-import './Feature_Right.css'
+import './Appointment_Right.css'
 import { format } from 'date-fns';
 
-const Feature_Right = () => {
+const Appointment_Right = () => {
     const dispatch = useDispatch()
     const [selected, setSelected] = useState(new Date())
     const date = format(selected, 'PP')
@@ -25,4 +25,4 @@ const Feature_Right = () => {
     );
 };
 
-export default Feature_Right;
+export default Appointment_Right;

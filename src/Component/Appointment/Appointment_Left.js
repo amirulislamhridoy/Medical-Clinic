@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios'
 import { useSelector } from 'react-redux';
-import './Feature_left.css'
+import './Appointment_left.css'
 import { toast } from 'react-toastify';
 
-const Feature_Left = () => {
+const Appointment_Left = () => {
     const date = useSelector(state => state.date.date)
     const [success, setSuccess] = useState('')
     const [error, setError] = useState('')
@@ -42,7 +42,7 @@ const Feature_Left = () => {
             });
     }
     return (
-        <div className='feature-left'>
+        <div className='Appointment-left'>
             <h2>Book an Appointment</h2>
             <form onSubmit={submitFrom}>
                 <div className='form-div'>
@@ -73,4 +73,4 @@ const Feature_Left = () => {
     );
 };
 
-export default Feature_Left;
+export default Appointment_Left;

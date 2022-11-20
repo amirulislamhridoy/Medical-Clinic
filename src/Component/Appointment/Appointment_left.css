@@ -1,18 +1,18 @@
-.feature-left{
+.Appointment-left{
     background-color: #3065b5;
     padding: 15px 30px;
     border-radius: 8px;
     color: white;
     margin-top: 10px;
 }
-.feature-left h2{
+.Appointment-left h2{
     font-weight: 500;
 }
-.feature-left form div{
+.Appointment-left form div{
     display: flex;
     flex-direction: column;
 }
-.feature-left input, .feature-left select{
+.Appointment-left input, .Appointment-left select{
     width: 277px;
     font-size: 16px;
     padding: 7px 12px;
@@ -24,27 +24,27 @@
     color: white;
     transition-duration: all ease .5s;
 }
-.feature-left select option{
+.Appointment-left select option{
     background-color: #4575bd;
 }
-.feature-left input:focus, .feature-left select:focus{
+.Appointment-left input:focus, .Appointment-left select:focus{
     outline-color: white;
 }
-.feature-left input::placeholder{
+.Appointment-left input::placeholder{
     color: white;
 }
-.feature-left input[type='submit']:hover{
+.Appointment-left input[type='submit']:hover{
     background-color: white;
     cursor: pointer;
     color: #3065b5;
 }
 
 @media screen and (max-width: 600px) {
-    .feature-left{
+    .Appointment-left{
         padding: 0 20px;
         padding-bottom: 10px;
     }
-    .feature-left input, .feature-left select{
+    .Appointment-left input, .Appointment-left select{
         width: 100%;
     }
 }

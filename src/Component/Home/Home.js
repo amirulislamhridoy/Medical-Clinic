@@ -10,6 +10,7 @@ import Percentage from './Percentage/Percentage';
 import ServiceAbout from './ServiceAbout/ServiceAbout';
 import OurServices from './OurServices/OurServices';
 import LatestNews from './LatestNews/LatestNews';
+import HomeDoctors from './HomeDoctors/HomeDoctors';
 
 const Home = () => {
     return (
@@ -22,6 +23,9 @@ const Home = () => {
             <ClientSay></ClientSay>
             <Percentage></Percentage>
             <LatestNews></LatestNews>
+            <hr />
+            <HomeDoctors></HomeDoctors>
+            <hr />
             <Partners></Partners>
             <Footer></Footer>
         </main>

@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import {Autoplay, Pagination, Navigation } from "swiper";
 
 const OurServices = () => {
     const [services, setServices] = useState([])
@@ -44,12 +44,16 @@ const OurServices = () => {
                     slidesPerView={1}
                     spaceBetween={30}
                     loop={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      }}
                     pagination={{
                         clickable: true,
                     }}
                     navigation={true}
                     // modules={[Pagination, Navigation]}
-                    modules={[ Navigation]}
+                    modules={[Autoplay, Navigation]}
                     className="slider-container"
                     breakpoints={{
                         550: {

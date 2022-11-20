@@ -8,6 +8,7 @@ header{
 }
 .header-change-bg{
     background-color: #4575bd;
+    padding-bottom: 6px;
 }
 header > div{
     max-width: 1200px;
@@ -41,6 +42,7 @@ header a{
 }
 .change-header-bg{
     background-color: #336bb8;
+    padding-bottom: 6px;
 }
 .change-header-bg > nav{
     max-width: 1200px;

@@ -4,7 +4,6 @@
 }
 .single-department h3{
     font-weight: 500;
-    margin-bottom: 0;
 }
 .single-department h3 a{
     text-decoration: none;
@@ -24,4 +23,15 @@
 }
 .single-department p a:hover{
     color: gray;
+}
+
+@media screen and (max-width: 640px) {
+    .single-department img{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .single-department img{
+        height: 300px;
+    }
 }

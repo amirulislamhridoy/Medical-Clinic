@@ -11,14 +11,14 @@ const MakeAdmin = () => {
     console.log(users)
 
     useState(() => {
-        fetch('https://medical-clinic-server.herokuapp.com/user')
+        fetch('https://medical-clinic-server.vercel.app/user')
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [refetch])
 
     const makeAdminFn = (id) => {
         console.log(id)
-        fetch(`https://medical-clinic-server.herokuapp.com/makeAdmin?id=${id}`, {
+        fetch(`https://medical-clinic-server.vercel.app/makeAdmin?id=${id}`, {
             method: 'PUT',
             body: JSON.stringify(),
             headers: {

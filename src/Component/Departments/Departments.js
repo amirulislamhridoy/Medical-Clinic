@@ -9,7 +9,7 @@ const Departments = ({ children }) => {
     const location = useLocation()
     const [departments, setDepartments] = useState([])
     useEffect(() => {
-        fetch('https://medical-clinic-server.herokuapp.com/department')
+        fetch('https://medical-clinic-server.vercel.app/department')
             .then(res => res.json())
             .then(data => setDepartments(data))
     }, [])

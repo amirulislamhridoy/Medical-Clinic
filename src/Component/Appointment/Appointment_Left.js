@@ -22,7 +22,7 @@ const Appointment_Left = () => {
         if (department === 'Select Department' || doctor === 'Select Doctor') {
             return alert('Please fill full form.')
         }
-        axios.post('https://medical-clinic-server.herokuapp.com/book', bookData)
+        axios.post('https://medical-clinic-server.vercel.app/book', bookData)
             .then(function (response) {
                 setSuccess('We will contract with you.');
                 toast.success('You appointment is success. We will contract with you')

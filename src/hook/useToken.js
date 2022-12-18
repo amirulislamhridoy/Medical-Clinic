@@ -5,7 +5,7 @@ const useToken = (user) => {
     const [token, setToken] =  useState('')
     const email = user?.user?.email
     if (email) {
-        axios.patch(`https://medical-clinic-server.herokuapp.com/login/${email}`, {email})
+        axios.patch(`https://medical-clinic-server.vercel.app/login/${email}`, {email})
             .then(function (response) {
                 localStorage.setItem("accessToken", response.data)
             })

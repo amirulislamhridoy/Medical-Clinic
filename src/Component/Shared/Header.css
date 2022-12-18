@@ -38,6 +38,7 @@ li:first-child{
 }
 header a{
     color: white;
+    font-size: 14px;
     text-decoration: none;
 }
 .change-header-bg{

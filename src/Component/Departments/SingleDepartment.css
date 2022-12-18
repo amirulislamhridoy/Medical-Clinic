@@ -4,6 +4,7 @@
 }
 .single-department h3{
     font-weight: 500;
+    margin-bottom: 0;
 }
 .single-department h3 a{
     text-decoration: none;

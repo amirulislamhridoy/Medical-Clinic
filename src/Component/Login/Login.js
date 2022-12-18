@@ -11,7 +11,7 @@ const Login = () => {
     const location = useLocation()
     const navigate = useNavigate()
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    
+
     const [
         signInWithEmailAndPassword,
         sUser,
@@ -25,14 +25,14 @@ const Login = () => {
         const pass = e.target.password.value
         signInWithEmailAndPassword(email, pass)
     }
-    const [token] = useToken(user || sUser )
+    const [token] = useToken(user || sUser)
     useEffect(() => {
         if (sUser || user) {
             navigate('/')
         }
     }, [sUser, user, token])
 
-    if (sLoading || loading ) {
+    if (sLoading || loading) {
         return <Loading></Loading>
     }
     return (
@@ -44,7 +44,7 @@ const Login = () => {
                         <form className="login" onSubmit={loginFormSubmit}>
                             <div className="login__field">
                                 <i className="login__icon fas fa-user"></i>
-                                <input type="email" name='email' clasNames="login__input" placeholder="User name / Email" required />
+                                <input type="email" name='email' className="login__input" placeholder="User name / Email" required />
                             </div>
                             <div className="login__field">
                                 <i className="login__icon fas fa-lock"></i>
